@@ -32,14 +32,13 @@ l_rate = 0.0001
 
 # training data location
 file_name_stub = 'dm_july2021_expert_' # dm_july2021_ aim_july2021_expert_ dm_july2021_expert_
-# file_name_stub = 'dm_6nov_aim_' 
-folder_name = '/home/cedric/Desktop/Counter-Strike_Behavioural_Cloning/01_csgo/01_trainingdata/' 
+folder_name = '/home/cedric/Desktop/csgo_retake_ai/data/training_data/' 
 starting_num = 1 # lowest file name to use in training
 highest_num = 30 # highest file name to use in training 4000, 5500, 190, 45, 10
 
 # whether to save model if training and where
 model_name = 'ak47_m41a_55k_sub_drop_'
-save_dir = '/home/cedric/Desktop/Counter-Strike_Behavioural_Cloning/01_csgo/02_savedmodels'
+save_dir = '/home/cedric/Desktop/csgo_retake_ai/data/saved_models'
 SAVE_MODEL = True
 
 # whether to resume training from a previous model
@@ -53,7 +52,7 @@ SUB_TYPE = 'ak' # ak or akm4 or all
 OVERSAMPLE_LOWFREQ_REGION=False
 
 # where are the metadata .npy files? only needed if subselecting
-curr_vars_folder = '/home/cedric/Desktop/Counter-Strike_Behavioural_Cloning/01_csgo/03_currvars/'
+curr_vars_folder = '/home/cedric/Desktop/csgo_retake_ai/data/currvars/'
 if file_name_stub == 'dm_july2021_expert_':
     curr_vars_stub = 'currvarsv2_dm_july2021_expert_'
 else:
